@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reservas</title>
+</head>
+<body>
+    <h1>Reservas</h1>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="email">Correo:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="date">Fecha:</label>
+        <input type="date" name="date" id="date"> 
+        <label for="hora">Hora:</label>
+        <input type="time" name="hora" id="hora"><br>
+
+        <label for="recorrido">Recorrido:</label>
+        <select id="recorrido" name="recorrido" required>
+            <option value="" disabled selected>Selecciona uno </option>
+            <option value="rioparques">Río y parques</option>
+            <option value="barrio">Sabores de barrio</option>
+            <option value="palmas">Reto Las Palmas</option>
+        </select><br>
+
+        <label for="recorrido">Selecciona el tipo de recorrido:</label>
+        <select name="bicicleta" id="bicicleta" required>
+            <option value="">Selecciona una...</option>
+            <option value="urbana">Urbana</option>
+            <option value="montaña">Montaña</option>
+            <option value="electrica">Eléctrica</option>
+        </select>
+<br>
+<br>
+        <button type="submit">Reservar</button>
+
+        <p>Volver a <a href="index.html">inicio</a></p>
+    </form>
+</body>
+</html>
