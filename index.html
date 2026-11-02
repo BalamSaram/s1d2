@@ -1,52 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda libre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <header>
+    <header class="text-white p-4">
         <h1>Rueda libre | Alquiler de bicicletas</h1>
         <p>Alquiler de bicicletas y recorridos guiados por Medellín</p>
     </header>
 
-    <section>
-        <h2>Nuestros servicios</h2>
+    <nav class="navbar">
+        <!--div class="navbar">
+            <div class="container"-->
+        <!-- <a class="navbar-brand" href="#">Rueda libre</a> -->
+        <div class="navbar-nav">
+            <a class="nav-link" href="/servicios.html">Nuestros servicios</a>
+            <a class="nav-link" href="/formulario.html">Reserva con nosotros</a>
+            <a class="nav-link" href="#Encuéntranos">Encuéntranos</a>
+        </div>
+        <!--/div>
+        </div-->
+    </nav>
 
-        <p>Ir a <a href="servicios.html"> nuestra tabla de servicios</a></p>
-        <p>Ir a <a href="formulario.html">reservas</a></p>
-        <p>Ir a <a href="#Encuéntranos">encuéntranos</a></p>
-        <h3>Alquiler de bicicletas</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dignissimos similique quisquam. Soluta, et ex dolores <strong>Incluye casco y candado.</strong> Repellat sunt pariatur aut qui nihil?</p>
-        <img src="bici1.webp" alt="imagen de bicicletas de stock" width="300px" height="150px">
-        <h4>Pasos para alquilar:</h4>
-        <ol>
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
-            <li>Paso 4</li>
-        </ol>
-        <h4>Beneficios de alquilar con nosotros</h4>
-        <ul>
-            <li>Beneficio 1</li>
-            <li>Beneficio 2</li>
-            <li>Beneficio 3</li>
-        </ul>
-        <img src="bici2.webp" alt="Imagen recorrido en bicicleta de stock" width="280px" height="150px">
-        <h3>Recorridos guiados</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga placeat,<em>quos harum aliquam porro voluptas optio omnis in,</em> facilis, molestias repellendus libero commodi? Rem autem ipsam animi fuga, quaerat aspernatur.</p>
-        <h3>Taller básico</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum possimus alias pariatur repellat quas,<strong>accusamus architecto aspernatur adipisci soluta esse</strong> laboriosam.</p>
-        <img src="bici3.webp" alt="imagen genérica 3" width="225px" height="110px">
-    </section>
+    <main class="contenedor">
+        <div class="container">
 
-    <section>
-        <h2 id="Encuéntranos">Encuéntranos:</h2>
-        <p>Nuestra <a href="https://maps.app.goo.gl/nwdxfk4yM6wuDG8N8" target="_blank">ubicación</a> en el mapa</p>
-        <a href="mailto:hola@ruedalibre.example" target="_blank">Escríbenos un correo</a>
-    </section>
+            <section>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h3>Alquiler de bicicletas</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dignissimos similique
+                                quisquam.
+                                Soluta, et ex dolores <strong>Incluye casco y candado.</strong> Repellat sunt pariatur
+                                aut
+                                qui
+                                nihil?
+                            </p>
+                            <img src="./img/bici1.webp" alt="imagen de bicicletas de stock" width="300px"
+                                height="150px">
+                            <h4>Pasos para alquilar:</h4>
+                            <ol>
+                                <li>Paso 1</li>
+                                <li>Paso 2</li>
+                                <li>Paso 3</li>
+                                <li>Paso 4</li>
+                            </ol>
+                        </div>
+                    </div>
 
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h4>Beneficios de alquilar con nosotros</h4>
+                            <ul>
+                                <li>Beneficio 1</li>
+                                <li>Beneficio 2</li>
+                                <li>Beneficio 3</li>
+                            </ul>
+                            <img src="./img/bici2.webp" alt="Imagen recorrido en bicicleta de stock" width="280px"
+                                height="150px">
+                            <h3>Recorridos guiados</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga placeat,<em>quos harum
+                                    aliquam
+                                    porro
+                                    voluptas optio omnis in,</em> facilis, molestias repellendus libero commodi? Rem
+                                autem
+                                ipsam
+                                animi
+                                fuga, quaerat aspernatur.</p>
+                        </div>
+                    </div>
 
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h3>Taller básico</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum possimus alias
+                                pariatur repellat
+                                quas,<strong>accusamus architecto aspernatur adipisci soluta esse</strong>
+                                laboriosam.</p>
+                            <img src="./img/bici3.webp" alt="imagen genérica 3" width="225px" height="110px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <h2 id="Encuéntranos">Encuéntranos:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5106.681908292245!2d62.1836411!3d52.4801262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d2a3002bf56d3f%3A0xe80b958cf7c90eee!2sEl%20Pentagrama%20Invertido%20de%20Kazajist%C3%A1n!5e1!3m2!1ses!2sco!4v1793583087282!5m2!1ses!2sco" width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                <button type="button" onclick="window.open('mailto:hola@ruedalibre.example')">Escríbenos</button>
+            </footer>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 </body>
+
 </html>
