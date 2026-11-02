@@ -19,6 +19,7 @@ header {
     transition: background-color 1.3s ease, text-shadow 5ms ease;
 
     background: linear-gradient(to bottom, #2b2b2b, #222121);
+    border-radius: 5px;
 }
 
 header:hover *{
@@ -52,7 +53,7 @@ header h1 {
     padding: 1rem;
 }
 
-.navbar-nav{
+.navbar-nav {
     flex-direction:row;
     display: flex;
     justify-content: space-evenly;
@@ -113,10 +114,10 @@ footer{
     background-color: #222121;
     font-weight: bold;
     color: #f4f4f4;
-    text-align: center;
+   /* text-align: center;*/
     padding: 1rem;
     bottom: 0;
-    width: 100%;
+  /*  width: 100%;*/
 }
 
 button {
@@ -164,3 +165,54 @@ button:hover {
     font-size: 1.2rem;
     color: #222121;
 }
+
+/*---------    ---------*/
+/*PÁGINA DE FORMULARIOOO*/
+/*---------    ---------*/
+
+
+body.form {
+    background-color: #222121;
+    font-weight: bold;
+    color: #f4f4f4;
+}
+
+.form main {
+    padding: 2rem 1rem;
+}
+
+.contenedor-formulario {
+    width: 100%;
+}
+
+.formulario-reserva {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: min(100%, 900px);
+    margin: 0 auto;
+}
+
+.grupo .card {
+    background: linear-gradient(to bottom,  #222121, #4e4c4c, #161515);
+    border: none;
+    color: #f4f4f4;
+    height: 100%;
+}
+
+.grupo h3 {
+    font-weight: bold;
+    text-align: center;
+    padding:15px;
+}
+
+/*.formulario-reserva .submit {
+    grid-column: 1 / -1; 
+    justify-self: center; 
+}*/
+
+/*@media (max-width: 767.98px) {
+    .formulario-reserva {
+        grid-template-columns: 1fr;
+    }
+}*/
